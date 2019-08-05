@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FCBGurkhas | Welcome</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="../CSS/style.css">
+    <style type="text/css">
+        canvas{
+            position: absolute;
+            background: transparent;
+            z-index: -1;
+        }
+
+
+    </style>
+</head>
+<body>
+	<header id="wrapper">
+            <div id="logo">
+            <a href="../index.html">
+            <img src="../images/logo.png" alt="logo">
+            </a>
+        </div>
+        
+            <h2>"Website Of Dreams"</h2>
+            <p>A place that allows us fans to become United.</p>
+    </header>
+    <div id="nav">
+        <nav>
+            <ul>
+                <li><a href="../index.html">What's New</a></li>
+                <li><a href="collection.html" >Collection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="bio.html">Bio</a></li>
+            </ul>
+        </nav>
+        <div class="scroll-line"></div>
+    </div>
+
+    <div id="container-canvas"><div id="container" style="background-color: inherit">
+        <h2>About The Author</h2>
+        <hr>
+
+        <h3>Email: saugatadhikari17@gmail.com</h3>
+        <h3>Phone: +977734058943</h3>
+        <h3>Address: Kathmandu,Nepal</h3>
+        <input type="email" id="email" placeholder="xyz@email.com" />
+        <input type="submit" value="Suscribe" id="suscribe" />
+        <div class="social">
+        <ul>
+          <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-lg fa-google-plus"></i></a></li>
+        </ul>
+      </div>
+      </div>
+<canvas>NOT SUPPORTED</canvas>
+</div>
+
+        <section class="box1">
+      <section id="form">
+        <h1 style="color:#c4c4c5">Your Info:</h1>
+        <p style="color:#c4c4c5">
+          Tell us why you enjoy us!
+        </p>
+        <form>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            required
+            autocomplete="off"
+            placeholder="Your Name"
+          />
+          <label for="activity">Activity:</label>
+          <textarea
+            id="activity"
+            cols="25"
+            rows="5"
+            required
+            autofocus
+            spellcheck="true"
+            placeholder="Interested Activity(Futsal or Screening)">
+          </textarea>
+
+          <label for="location">Nearast location:</label>
+          <input
+            type="text"
+            id="location"
+            required
+            autocomplete="off"
+            placeholder="Location"
+          />
+          <input type="submit" name="send" id="submit" value="Send" />
+        </form>
+
+      </section>
+      <div id="map"></div>
+    </section>
+
+    <button id="top">Top</button>
+
+   <footer>
+        <div class="container">
+            <div class="footer-cols">
+                <ul>
+                    <li>Club</li>
+                    <li>
+                        <a href="#">Squad</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                    </li>
+                    <a href="#">Transfers</a>
+                    <li>
+                        <a href="#">Injury</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Competitions</li>
+                    <li>
+                        <a href="#">UCL</a>
+                    </li>
+                    <li>
+                        <a href="#">La Liga</a>
+                    </li>
+                    <li>
+                        <a href="#">Copa Del Rey</a>
+                    </li>
+                    <li>
+                        <a href="#">Club World Cup</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>Community</li>
+                    <li>
+                        <a href="#">Futsal</a>
+                    </li>
+                    <li>
+                        <a href="#">Featured</a>
+                    </li>
+                    <li>
+                        <a href="#">Merch Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">Screening</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>About</li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Location</a>
+                    </li>
+                    <li>
+                        <a href="#">Sponsors</a>
+                    </li>
+                    <li>
+                        <a href="#">Founder</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Copyright &copy; 2018 FCBGurkhas
+        </div>
+		</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../JS/script.js"></script>
+    
+    <script src="JS/main.js"></script>
+    <script>
+      function initMap() {
+        
+        var uluru = { lat: 27.7284, lng: 85.3453 };
+      
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 13,
+          center: uluru
+        });
+      
+        var marker = new google.maps.Marker({ position: uluru, map: map });
+      }
+    </script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=
+      AIzaSyBhhrpU6VwXlZfQLn32CRanKKKIQnr_99I
+        &callback=initMap"
+    ></script>
+
+</body>
+</html>
